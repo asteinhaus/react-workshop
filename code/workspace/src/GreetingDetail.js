@@ -15,7 +15,9 @@ export default class GreetingDetail extends React.Component {
         );
     }
 
-    //constructor
+    // Constructor nimmt 2 Properties von außen
+    // props.name
+    // props.greeting
     constructor(props) {
        super(props);
        const name = this.props.name;
