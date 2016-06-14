@@ -11,6 +11,9 @@ export default class GreetingDetail extends React.Component {
             <input ref={input => this.input = input} 
                     onChange={event => this.updateModel('greeting', event.target.value)} 
                     value={greeting} />
+            <button onClick={() => this.reset()}>
+              CLEAR 
+            </button>
           </div>
         );
     }
