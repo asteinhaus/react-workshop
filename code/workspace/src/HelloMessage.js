@@ -11,6 +11,10 @@ export default class HelloMessage extends React.Component {
             <button onClick={() => this.reset()}>
               CLEAR 
               </button>
+              // SAVE-Button
+              <button onClick={    }>
+              SAVE 
+              </button>
           </div>
         );
     }

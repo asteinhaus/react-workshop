@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import GreetingDetail from './GreetingDetail';
+import GreetingController from './GreetingController';
 
 const mountNode = document.getElementById('mount');
-ReactDOM.render(<GreetingDetail name="Andreas" greeting="Mahlzeit" />, mountNode);
+ReactDOM.render(<GreetingController />, mountNode);

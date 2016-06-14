@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default class GreetingDetail extends React.Component {
-    render() {
+    render(props) {
       const {name, greeting} = this.state;
         return (
           <div>
@@ -13,6 +13,9 @@ export default class GreetingDetail extends React.Component {
                     value={greeting} />
             <button onClick={() => this.reset()}>
               CLEAR 
+            </button>
+            <button onClick={() => this.save()}>
+              SAVE
             </button>
           </div>
         );
@@ -35,6 +38,14 @@ export default class GreetingDetail extends React.Component {
 
     //updateModel
     updateModel(key, value) {
-      this.setState({[name]: value});
+      this.setState({[key]: value});
     }
+
+    save() {
+      const onAdd = this.props.onAdd;
+      const name = this.state.name;
+      const greeting = this.state.greeting;
+      onAdd({ name, greeting });
+    }
+
 }
