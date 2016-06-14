@@ -4,4 +4,4 @@ import ReactDOM from 'react-dom';
 import HelloMessage from './HelloMessage';
 
 const mountNode = document.getElementById('mount');
-ReactDOM.render(<HelloMessage/>, mountNode);
+ReactDOM.render(<HelloMessage greeting="Hello" />, mountNode);
